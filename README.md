@@ -12,9 +12,9 @@
 1.  Complete Setup and Launch steps 1-2
 2.  In the "Project" tab, open the following files:
 
-    i.  Assets > Scripts > CharacterCollider.cs
-    ii.  Assets > Scripts > UnitTests > CharacterDataTests.cs
-    iii.  Assets > Scripts > UnitTests > TestStruct.cs
+i.  Assets > Scripts > CharacterCollider.cs
+ii.  Assets > Scripts > UnitTests > CharacterDataTests.cs
+iii.  Assets > Scripts > UnitTests > TestStruct.cs
 
 3.  These changes made to the base TrashDash repository can be used to unit test some of the life UI and life counters (not fully implemented)
 4.  In the "Project" tab, open Assets > Test Instructions.pdf
