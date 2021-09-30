@@ -62,6 +62,9 @@ public class CharacterCollider : MonoBehaviour
     protected const int k_PowerupLayerIndex = 10;
     protected const float k_DefaultInvinsibleTime = 2f;
 
+	public delegate void OnCharacterHit();
+    public event OnCharacterHit characterHitEvent;
+
     protected void Start()
     {
 		m_Collider = GetComponent<BoxCollider>();
@@ -126,6 +129,8 @@ public class CharacterCollider : MonoBehaviour
         {
             if (m_Invincible || controller.IsCheatInvincible())
                 return;
+
+			characterHitEvent?.Invoke();
 
             controller.StopMoving();
 
